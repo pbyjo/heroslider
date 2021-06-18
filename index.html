@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="./styles/style.css">
+        <title> Hero Slider </title>
+    </head>
+
+    <body>
+        <main>
+            <!-- image slider start -->
+            <section class="slider">
+
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" value="" id="radio-btn1" />
+                    <input type="radio" name="radio-btn" value="" id="radio-btn2" />
+                    <input type="radio" name="radio-btn" value="" id="radio-btn3" />
+                    <input type="radio" name="radio-btn" value="" id="radio-btn4" />
+
+                    <figure class="slide first">
+                        <img src="./images/model x.jpg" alt="imagen de presentacion 1">
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/model s.jpg" alt="imagen de presentacion 2">
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/model 3.jpg" alt="imagen de presentacion 3">
+                    </figure>
+                    <figure class="slide">
+                        <img src="./images/roaster.jpg" alt="imagen de presentacion 4">
+                    </figure>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio-btn1" class="manual-btn"></label>
+                    <label for="radio-btn2" class="manual-btn"></label>
+                    <label for="radio-btn3" class="manual-btn"></label>
+                    <label for="radio-btn4" class="manual-btn"></label>
+                </div>
+                
+            </section>
+            <!-- image slider end -->
+        </main>
+
+        <script>
+            let counter = 1;
+            setInterval(function () {
+                const it = document.getElementById('radio-btn' + counter)
+                it.checked = true;
+                counter ++;
+                if(counter > 4) {
+                    counter = 1
+                }
+            }, 4000);
+        </script>
+    </body>
+
+</html>

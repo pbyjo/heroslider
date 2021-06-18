@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #f5f3f4;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b56576;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: sandybrown;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 500px;
+}
+.slides > input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+.slide > img {
+  height: 500px;
+}
+
+/* Navigation manual */
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40d3dc;
+}
+
+#radio-btn1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio-btn2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio-btn3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio-btn4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/* Auto */
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+.navigation-auto > div {
+  border: 2px solid #b56576;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto > div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio-btn1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #40d3dc;
+}
+
+#radio-btn2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #40d3dc;
+}
+
+#radio-btn3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #40d3dc;
+}
+
+#radio-btn4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #40d3dc;
+}
+
+/*# sourceMappingURL=style.css.map */

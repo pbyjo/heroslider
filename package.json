@@ -1,0 +1,22 @@
+{
+  "name": "hero-slider",
+  "version": "1.0.0",
+  "description": "Hero slider para mostrar varias imagenes en la presentacion del home",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/style.scss ./styles/style.css"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "hero",
+    "slider"
+  ],
+  "author": "@pbyjo on github | byjo.developer@gmail.com",
+  "license": "ISC"
+}
